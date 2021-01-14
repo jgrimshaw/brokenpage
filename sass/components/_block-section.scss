@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Block section - program page and home page
+   ========================================================================== */
+
+.g-block-section{
+  position: relative;
+  h2 a, h4 a{
+    &:hover{
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+  .top-container{
+    background: linear-gradient(180deg, transparent 120px, #A6192E 120px);
+    .block-col {
+      background-color: #632472;
+      @media (min-width: $min-break-tablet) {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+      @media (max-width: $max-break-tablet) {
+        display: block;
+      }
+    }
+  }
+  .bottom-container{
+    .block-col {
+      background-color: #005EB8;
+      @media (min-width: $min-break-tablet) {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+  .block-container-1{
+    padding: 50px;
+    @media (max-width: 1200px) {
+      padding: 30px 20px;
+    }
+    @media (max-width: $max-break-tablet) {
+      padding: 30px 0;
+    }
+  }
+  .block-container-short{
+    padding-top: 170px;
+    @media (max-width: 1200px) {
+      padding-top: 150px;
+    }
+    @media (max-width: $max-break-tablet) {
+      padding: 30px 0;
+    }
+  }
+}

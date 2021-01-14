@@ -1,0 +1,22 @@
+/* Import styles
+ */
+
+//Motion UI - for animations
+@import '../node_modules/motion-ui/src/motion-ui';
+
+//Helpers
+@import "helpers/_variables";
+
+//Base
+@import "base/_general";
+
+//Components
+@import "components/_block-section";
+@import "components/_buttons";
+@import "components/_cards";
+@import "components/_footer";
+@import "components/_header";
+
+//Pages
+@import "pages/_home";
+@import "pages/_program";

@@ -1,0 +1,25 @@
+//---------------------- Button Toggle -------------------------
+
+.g-toggle{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  .g-toggle-btn {
+    text-transform: none;
+    background-color: #ffffff !important;
+    color: #323F53 !important;
+    border-color: #323F53 !important;
+    &.g-active{
+      background-color: #323F53 !important;
+      color: #ffffff !important;
+    }
+  }
+}
+
+// mobile buttons full width
+
+@media (max-width: $max-break-mobile) {
+  .g-btn-block-xs {
+    display: block;
+  }
+}

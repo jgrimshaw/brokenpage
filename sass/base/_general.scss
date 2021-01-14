@@ -1,0 +1,182 @@
+/* ==========================================================================
+   General Styling Updates
+   ========================================================================== */
+
+// Increase mobile font sizes globally
+
+body {
+  @media (max-width: $max-break-tablet) {
+    font-size: 100%;
+  }
+  @media (max-width: $max-break-mobile) {
+    font-size: 95%;
+  }
+}
+
+// helpers
+
+.g-margin-top-0{
+  margin-top: 0;
+}
+
+.g-margin-bottom-0{
+  margin-bottom: 0;
+}
+
+.g-padding-top-0{
+  padding-top: 0;
+}
+
+.g-padding-bottom-0{
+  padding-bottom: 0;
+}
+
+// New typography styling helpers
+
+.g-drop-cap.g-drop-cap-red:first-letter{
+  color: #A6192E;
+}
+
+.g-text-color-red{
+  color: #A6192E;
+}
+
+.g-text-bolder{
+  font-weight: 700;
+}
+
+.g-checkmark{
+  &.g-font-larger {
+    padding-left: 30px;
+    > li:before {
+      margin: 5px 0 0 -30px;
+    }
+  }
+  &.g-color-white {
+    > li:before {
+      color: #ffffff;
+    }
+  }
+  li.g-icon-circle{
+    &:before{
+      content: "\f21b";
+      font-size: 10px;
+      margin: 5px 0 0 -18px;
+    }
+    &.g-open{
+      &:before {
+        color: $green;
+      }
+    }
+    &.g-closed{
+      &:before {
+        color: $red;
+      }
+    }
+    &.g-closed{
+      &:before {
+        color: $red;
+      }
+    }
+    &.g-waitlisted{
+      &:before {
+        color: $yellow;
+      }
+    }
+    &.g-ongoing{
+      &:before {
+        color: #32CACA;
+      }
+    }
+  }
+}
+
+// Override tabs?? This was causing bug
+
+@media (max-width: 800px){
+  .g-basic-tabs a:not(.g-link-2).g-active {
+    border-bottom: 3px solid #a6192e;
+  }
+}
+
+// Play video image (program page)
+
+.video-img-container{
+  position: relative;
+  > img{
+    display: block;
+  }
+  .bg{
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 100ms linear;
+  }
+  a.link{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    margin: 0 auto;
+    .link-content{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    img.play{
+      display: block;
+      margin: 0 auto;
+      width: 20px;
+      height: 17px;
+    }
+  }
+  &:hover{
+    .bg {
+      background-color: rgba(0, 0, 0, .4);
+    }
+  }
+}
+
+// Stats (program page)
+
+.stat-section{
+  color: #ffffff;
+  .img-container{
+    position: absolute;
+    img{
+      margin-top: 13px;
+      margin-left: 10px;
+      width: 50px;
+    }
+  }
+  .content{
+    border-left: 1px solid rgba(255, 255, 255, .60);
+    padding-left: 25px;
+    margin-left: 80px;
+    min-height: 72px;
+    .stat{
+      font-size: 40px;
+      line-height: 42px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .label{
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 600;
+    }
+  }
+}
+
+

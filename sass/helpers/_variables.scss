@@ -1,0 +1,240 @@
+/* ==========================================================================
+   Global Variables (from previous code - DO NOT DUPLICATE)
+   ========================================================================== */
+
+/* ======================= Colours ======================== */
+
+$brand-1: #A6192E;
+$brand-2: #6D2077;
+$brand-3: #005EB8;
+$brand-4: #00A3E0;
+$brand-5: #DA291C;
+
+$red: #DA291C;
+$green: #40A33C;
+$yellow: #FFB016;
+
+$grey-1: #201F1F;
+$grey-2: #324053;
+$grey-3: #565A61;
+$grey-4: #767C86;
+$grey-5: #D9DADC;
+
+//font-colours
+$text-color: $grey-3;
+$text-light: $grey-4;
+$text-dark: $grey-1;
+$text-color-secondary: $grey-2;
+
+$heading-color: $grey-2;
+
+$error-color: $brand-1;
+
+$bg-color-1: #fff;
+$bg-color-2: #F7F7F8;
+$bg-color-3: #F6F7F9;
+$bg-color-4: #1C232C;
+
+$hr-color: $grey-5;
+$border-color: $grey-5;
+$border-color2: lighten($grey-5, 5%);
+
+
+/* ======================= Misc ======================== */
+
+//Default box shadaw
+$box-shadow: 1px 1px 1px $grey-2;
+
+//Default border radius
+$border-radius: 8px;
+
+/* ======================= Links/Type ======================== */
+
+//Links
+$link-color: $brand-3;
+$link-color-hover: darken($brand-3, 18%);
+$link-color-visited: darken($brand-3, 12%);
+
+//Secondary link color
+$link-color-2:  $brand-3;
+$link-color-hover-2: darken($brand-3, 18%);
+$link-color-visited-2:  darken($brand-3, 12%);
+
+//Tertiary link color
+$link-color-3: #fff;
+$link-color-hover-3:  #fff;
+$link-color-visited-3:  darken(#fff, 5%);
+
+//Type
+$heading-font: 'Titillium Web', sans-serif;
+$body-font: 'Titillium Web', sans-serif;
+
+
+$heading-link-color: $brand-3;
+$heading-hover-color:  darken($brand-3, 8%);
+
+$base-font-size: 16px;
+$base-line-height: 1.3em;
+$p-line-height: 1.55em;
+$heading-line-height: 1.3em;
+
+$body-font-weight-bold: 600;
+$body-font-weight-extra-bold: 700;
+$body-font-weight-regular: 400;
+
+/* ======================= Buttons ======================== */
+
+$btn-font-size: .92em;
+$btn-height: 35px;
+$btn-line-height: 33px;
+$btn-padding: 0 22px;
+$btn-text-align: center;
+$btn-border-radius: 60px;
+$btn-font-family: $body-font;
+
+//Small button
+$btn-sm-height: 30px;
+$btn-sm-line-height: 28px;
+$btn-sm-padding: 0 16px;
+$btn-sm-font-size: .88em;
+
+//Large button
+$btn-lg-height: 45px;
+$btn-lg-line-height: 43px;
+$btn-lg-padding: 0 27px;
+$btn-lg-font-size: 1em;
+
+
+//Primary button
+$btn-bg: $brand-5;
+$btn-border: $brand-5;
+$btn-color: #fff;
+
+$btn-hover-bg: darken($brand-5, 7%);
+$btn-hover-border: darken($brand-5, 7%);
+$btn-hover-color: #fff;
+
+$btn-active-bg: $brand-2;
+$btn-active-border: $brand-2;
+$btn-active-color: #fff;
+
+//Secondary button
+$btn-2-bg: transparent;
+$btn-2-border: $brand-1;
+$btn-2-color: $brand-1;
+
+$btn-2-hover-bg: darken($brand-1, 3%);
+$btn-2-hover-border: darken($brand-1, 3%);
+$btn-2-hover-color: #fff;
+
+$btn-2-active-bg: $brand-2;
+$btn-2-active-border: $brand-2;
+$btn-2-active-color: #fff;
+
+//Tertiary button
+$btn-3-bg: rgba(28, 35, 45, 0.68);
+$btn-3-border: rgba(28, 35, 45, 0.68);
+$btn-3-color: #fff;
+
+$btn-3-hover-bg: rgba(32, 31, 31, 1);
+$btn-3-hover-border: rgba(32, 31, 31, 1);
+$btn-3-hover-color: #fff;
+
+$btn-3-active-bg: rgba(32, 31, 31, 1);
+$btn-3-active-border: rgba(32, 31, 31, 1);
+$btn-3-active-color: #fff;
+
+//Quaternary button
+$btn-4-bg: rgba(255,255,255,.65);
+$btn-4-color: $grey-2;
+
+$btn-4-hover-bg: rgba(255,255,255,.8);
+$btn-4-hover-color:$grey-2;
+
+$btn-4-active-bg: #fff;
+$btn-4-active-color: $grey-2;
+
+//5th button
+$btn-5-bg: transparent;
+$btn-5-border: #fff;
+$btn-5-color:  #fff;
+
+$btn-5-hover-bg: rgba(255,255,255,.1);
+$btn-5-hover-border: #fff;
+$btn-5-hover-color: #fff;
+
+$btn-5-active-bg: #fff;
+$btn-5-active-border: #fff;
+$btn-5-active-color: $grey-1;
+
+//6th button
+$btn-6-bg: transparent;
+$btn-6-border: $grey-5;
+$btn-6-color:  $grey-4;
+
+$btn-6-hover-bg: rgba(0,0,0,.05);
+$btn-6-hover-border: $grey-5;
+$btn-6-hover-color: $grey-3;
+
+$btn-6-active-bg: $grey-5;
+$btn-6-active-border: $grey-5;
+$btn-6-active-color: $grey-3;
+
+/* ======================= Forms ======================== */
+
+$input-border-color: $border-color;
+$input-active-border-color: $grey-3;
+$input-border-radius: $border-radius;
+$input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+$select-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+$input-color: $grey-3;
+$input-placeholder-color: $grey-4;
+$radio-active-color: $brand-2;
+$checkbox-active-color: $brand-2;
+
+
+/* ======================= Tables ======================== */
+
+$table-padding: 9px 13px;
+$table-border-color: $grey-3;
+$table-striped-bg-color: $bg-color-2;
+$table-hover-bg-color: rgba(42, 120, 195, 0.1);
+
+
+/* ======================= Cards ======================== */
+
+$card-bg-color: #fff;
+$card-padding: 25px;
+
+
+/* ======================= Defaults ======================== */
+
+//Default box-sizing
+$box-sizing: border-box;
+
+//Default transitions
+$transition1-default: all 0.1s ease-in;
+$transition2-default: all 0.3s ease-in;
+$transition3-default: all 0.7s ease-in;
+
+/* ======================= Responsive ======================== */
+
+//Repsonsive breakpoints
+$min-break-desktop: 1101px;
+$max-break-desktop: 1100px;
+
+$min-break-tablet: 941px;
+$max-break-tablet: 940px;
+
+//navigation break point
+$min-break-mobile-nav: 801px;
+$max-break-mobile-nav: 800px;
+
+$min-break-mobile: 521px;
+$max-break-mobile: 520px;
+
+
+//Grid system variables
+$gutter: 1em;
+$lg-gutter: 45px;
+$sm-gutter: 8px;
